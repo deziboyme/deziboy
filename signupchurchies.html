@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+        .container {
+            width: 600px;
+            height: 740px;
+            margin-left: 20%;
+            position: absolute;
+            top: 20px;
+
+        }
+        .churchies {
+            width: 260px;
+            height: 40px;
+            
+            color: green;
+            margin-left: 320px;
+            margin-top: 10px;
+            font-size: xx-large;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        #signupwriteup {
+              width: 480px;
+              min-height: 64px;
+              margin-left: 60px;
+              text-align: center;
+              font-weight: bold;
+
+
+        }
+        .box-shadow {
+            width: 560px;
+            height: 544px;
+            border: 1 px solid red;
+            background-color: white;
+            color: white;
+            margin-left: 20px; 
+            box-shadow: 0 5px 10px 0 rgb(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);
+        }
+        input {
+            padding: 5px;
+            width: 190px;
+            margin-top: 30px;
+            margin-left: 40px;
+            
+            
+        }
+        input[type=number] {
+            padding: 5px;
+            width: 248px;  
+            margin-left: 120px;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid green;
+            border-top: none;
+        }
+        input[type=text], select {
+             width: 200px;
+             display: inline-block;
+             box-sizing: border-box;
+             margin-left: 40px;
+        }
+        .button {
+         width: 130px;
+         height: 30px;
+         margin-left: 36%;
+         margin-top: 20px;
+         padding-top: 8px;
+         border: 1px solid green;
+         border-top-left-radius: 10px;
+         border-top-right-radius: 10px;
+         border-bottom-left-radius: 10px;
+         border-bottom-right-radius: 10px;
+         font-size: 17px;
+         font-family: sans-serif;
+         font-weight: bold;
+         background-color: green;
+         color: white;
+     }
+       .input-cnt {
+        display: flex;
+       } 
+       .input-cnt > input {
+         outline: none;
+          border: 1px solid  black;
+         
+       }
+       .input-cnt::placeholder, textarea::placeholder {
+         color: black;
+       }
+        .input-cnt:focus,  input:focus {
+            border: 2px solid green;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container ">
+        <div class="churchies"> ChurchiesFood</div> 
+ <h2><div id="signupwriteup">  Create an account to start using Churchies food Delivery site </div> </h2>
+ <div class="box-shadow">
+ <form action="simple-page.php"> 
+    <div class="input-cnt">
+    <input type="text" name="Surname" placeholder="Enter your Surname">
+    <input type="text" name="Lastname" placeholder="Enter your Lastname">
+    </div>
+      <br>
+      
+    <input type="number" name="mobile Number" placeholder="Enter your Phone Number">
+        <br>
+        <h3 style="color: black; font-family: sans-serif;"> <center>select your state location </center></h3>
+        <select name="state-location" id="location">
+       <option value="location" id="location"> state-location</option>
+       <option value="location" id="location"> Agbor</option>
+       <option value="location" id="location"> Asaba</option>
+       <option value="location" id="location"> river</option>
+       <option value="location" id="location"> state-location</option>
+
+        </select>
+        <input type="text" name="age" placeholder="Enter your Age">
+        <br>
+        
+        <h3 style="color: black; font-family: sans-serif;"> <center>  what is your gender</center></h3>
+        <input type="radio" name="gender" value="male" id="male"/>
+         <label for="male" style="color: black;"> <b>male </b></label>
+         <br>
+         <input type="radio" name="gender" value="female" id="female" />
+         <label for="male" style="color: black"> <b> female </b></label>
+         <br>
+         <div class="input-cnt">
+         <input type="password" name="password" placeholder="Enter your password">
+         <input type="password" name="password" placeholder="Comfirm your password">
+         <br>
+         </div>
+         
+         <div class="button"> <center> Next </center></div>
+ </form>
+   </div>
+    </div>
+</body>
+</html>
